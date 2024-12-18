@@ -1,19 +1,7 @@
-export const Sum = ({ a = 0, b = 0 }) => (
-  <>
-    <p>
-      Sum of {a} and {b} is 5
-    </p>
-    <p>
-      Sum of {a} and {b} is {a || b}
-    </p>
-    <p>
-      Sum of {a} and {b} is 10
-    </p>
-    <p>
-      Sum of {a} and {b} is 5
-    </p>
-    <p>
-      Sum of {a} and {b} is {a || b}
-    </p>
-  </>
-);
+export const Sum = ({ a = 0, b = 0 }) => {
+  const soma = a + b;
+
+  <p>
+    Sum of {a} and {b} is {soma}
+  </p>;
+};
